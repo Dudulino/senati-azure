@@ -1,7 +1,6 @@
 <?php
 
   include 'conexion.php';
-  $password = "Josue_2006"
 
 ?>
 
@@ -27,7 +26,7 @@
 
 <body>
 
-  <button class="btn btn-success">Agregar +</button>
+  <button class="btn btn-warning"><a href="insertar.php">Agregar +</a></button>
 
   <table class="table table-bordered">
 
@@ -65,7 +64,7 @@
 
           <td>$row[apellidos]</td>
 
-          <td>Editar | Eliminar</td>
+          <td><a href=editar.php?id=$row[id]>Editar</a> | <a href=eliminar.php?id=$row[id]>Eliminar</a></td>
 
         </tr>";
 
